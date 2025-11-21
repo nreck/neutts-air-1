@@ -1,0 +1,20 @@
+# run info
+restore_from: "neuphonic/neutts-air"
+save_root: "./checkpoints"
+run_name: "neutts-da-coral-5k"
+
+# model info
+codebook_size: 65536
+max_seq_len: 2048
+lr: 0.00004
+lr_scheduler_type: "cosine"
+warmup_ratio: 0.03
+
+# train info
+per_device_train_batch_size: 2
+max_steps: 1500
+logging_steps: 50
+save_steps: 500
+seed: 1337
+
+
